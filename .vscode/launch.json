@@ -19,7 +19,29 @@
                     "kind": "bin"
                 }
             },
-            "args": ["${workspaceFolder}\\resources\\day1.txt"],
+            "args": [
+                "${workspaceFolder}\\resources\\day1.txt"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "rock_paper_scissors",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rock_paper_scissors",
+                    "--package=advent_of_code_2022"
+                ],
+                "filter": {
+                    "name": "rock_paper_scissors",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "${workspaceFolder}\\resources\\day2.txt"
+            ],
             "cwd": "${workspaceFolder}"
         }
     ]
