@@ -43,6 +43,26 @@
                 "${workspaceFolder}\\resources\\day2.txt"
             ],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "rucksack_reorganization",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rucksack_reorganization",
+                    "--package=advent_of_code_2022"
+                ],
+                "filter": {
+                    "name": "rucksack_reorganization",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "${workspaceFolder}\\resources\\day3.txt"
+            ],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
