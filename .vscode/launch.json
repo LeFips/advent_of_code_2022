@@ -83,6 +83,26 @@
                 "${workspaceFolder}\\resources\\day4.txt"
             ],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "supply_stacks",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=supply_stacks",
+                    "--package=advent_of_code_2022"
+                ],
+                "filter": {
+                    "name": "supply_stacks",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "${workspaceFolder}\\resources\\day5.txt"
+            ],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
