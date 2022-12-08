@@ -103,6 +103,26 @@
                 "${workspaceFolder}\\resources\\day5.txt"
             ],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "tuning_trouble",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tuning_trouble",
+                    "--package=advent_of_code_2022"
+                ],
+                "filter": {
+                    "name": "tuning_trouble",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "${workspaceFolder}\\resources\\day6.txt"
+            ],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
