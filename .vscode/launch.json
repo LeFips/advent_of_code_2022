@@ -123,6 +123,26 @@
                 "${workspaceFolder}\\resources\\day6.txt"
             ],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "no_space_left_on_device",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=no_space_left_on_device",
+                    "--package=advent_of_code_2022"
+                ],
+                "filter": {
+                    "name": "no_space_left_on_device",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "${workspaceFolder}\\resources\\day7.txt"
+            ],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
